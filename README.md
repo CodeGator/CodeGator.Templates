@@ -1,6 +1,7 @@
 ## CodeGator.Templates: 
 ---
 
+[![Build Status](https://dev.azure.com/codegator/CodeGator.Templates/_apis/build/status%2FCodeGator.CodeGator.Templates?branchName=main)](https://dev.azure.com/codegator/CodeGator.Templates/_build/latest?definitionId=122&branchName=main)
 
 #### What does it do?
 This package contains template services used by various CodeGator solutions.
