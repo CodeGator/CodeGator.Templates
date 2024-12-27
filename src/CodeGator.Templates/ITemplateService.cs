@@ -16,6 +16,10 @@ public interface ITemplateService
     /// <param name="cancellationToken">A cancellation token that is monitored
     /// for a cancellation request throughout the lifetime of the method.</param>
     /// <returns>The transformed template, with tokens replaced by values.</returns>
+    /// <exception cref="ArgumentException">This exception is thrown whenever
+    /// one or more arguments are missing, or invalid.</exception>
+    /// <exception cref="ServiceException">This exception is thrown whenever
+    /// the service fails to complete the operation.</exception>
     Task<string> TransformAsync(
         [NotNull] string template,
         [NotNull] IEnumerable<TemplateToken> tokens,
