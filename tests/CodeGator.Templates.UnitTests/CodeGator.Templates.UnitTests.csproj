@@ -1,26 +1,14 @@
-<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="MSTest.Sdk/4.2.1">
 
   <PropertyGroup>
     <TargetFramework>net9.0</TargetFramework>
     <LangVersion>latest</LangVersion>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <EnableMSTestRunner>true</EnableMSTestRunner>
-    <OutputType>Exe</OutputType>
-    <TestingPlatformDotnetTestSupport>true</TestingPlatformDotnetTestSupport>
-    <!--
-      Displays error on console in addition to the log file. Note that this feature comes with a performance impact.
-      For more information, visit https://learn.microsoft.com/dotnet/core/testing/unit-testing-platform-integration-dotnet-test#show-failure-per-test
-      -->
-    <TestingPlatformShowTestsFailure>true</TestingPlatformShowTestsFailure>
+    <GenerateDocumentationFile>false</GenerateDocumentationFile>
+    <!-- Default profile enables Code Coverage and TRX extensions; aligns with Microsoft.Testing.Platform + dotnet test (.NET 10 SDK). -->
+    <TestingExtensionsProfile>Default</TestingExtensionsProfile>
   </PropertyGroup>
-
-  <ItemGroup>
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.12.0" />
-    <PackageReference Include="Microsoft.Testing.Extensions.CodeCoverage" Version="17.13.1" />
-    <PackageReference Include="Microsoft.Testing.Extensions.TrxReport" Version="1.5.0" />
-    <PackageReference Include="MSTest" Version="3.7.0" />
-  </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\..\src\CodeGator.Templates\CodeGator.Templates.csproj" />
