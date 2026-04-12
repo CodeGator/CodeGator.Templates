@@ -9,6 +9,8 @@
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<PackageProjectUrl>https://github.com/CodeGator/CodeGator.Templates</PackageProjectUrl>
 		<RepositoryUrl>https://github.com/CodeGator/CodeGator.Templates</RepositoryUrl>
+		<Title>CodeGator Templates</Title>
+		<PackageLicenseFile>LICENSE.md</PackageLicenseFile>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -16,6 +18,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Include="..\..\LICENSE.md">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
 	  <None Include="..\..\packageDefaultIcon-128x128.png">
 	    <Pack>True</Pack>
 	    <PackagePath>\</PackagePath>
