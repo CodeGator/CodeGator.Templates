@@ -2,34 +2,17 @@
 namespace CodeGator.Templates.Options;
 
 /// <summary>
-/// This class contains configuration settings for the <see cref="ITemplateService"/>
-/// service.
+/// This class holds configuration for <see cref="ITemplateService"/>.
 /// </summary>
 public class TemplateServiceOptions
 {
-    // *******************************************************************
-    // Fields.
-    // *******************************************************************
-
-    #region Fields
-
     /// <summary>
-    /// This field contains the path to these setting in the configuration.
+    /// The configuration section path for binding <see cref="TemplateServiceOptions"/>.
     /// </summary>
     public const string SectionPath = "Services:Template";
 
-    #endregion
-
-    // *******************************************************************
-    // Properties.
-    // *******************************************************************
-
-    #region Properties
-
     /// <summary>
-    /// This property contains the character(s) that delimit a template token.
+    /// This property defines the delimiter that wraps token names in templates.
     /// </summary>
     public string TokenDelimiter { get; set; } = "%%";
-
-    #endregion
 }

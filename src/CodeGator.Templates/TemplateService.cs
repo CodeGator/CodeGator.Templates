@@ -4,22 +4,20 @@ using CodeGator.Templates.Options;
 namespace CodeGator.Templates;
 
 /// <summary>
-/// This class is a default implementation of the <see cref="ITemplateService"/>
-/// interface.
+/// This class is the default <see cref="ITemplateService"/> implementation.
 /// </summary>
-/// <param name="templateServiceOptions">The options to use with this service.</param>
-/// <param name="logger">The logger to use with this service.</param>
+/// <remarks>
+/// This constructor initializes a new instance of the <see cref="TemplateService"/>
+/// class.
+/// </remarks>
+/// <param name="templateServiceOptions">Bound options for delimiter and related
+/// settings.</param>
+/// <param name="logger">Logger for diagnostic output from this service.</param>
 internal sealed class TemplateService(
     IOptions<TemplateServiceOptions> templateServiceOptions,
     ILogger<TemplateService> logger
     ) : ITemplateService
 {
-    // *******************************************************************
-    // Public methods.
-    // *******************************************************************
-
-    #region Public methods
-
     /// <inheritdoc/>
     public Task<string> TransformAsync(
         [NotNull] string template,
@@ -59,7 +57,5 @@ internal sealed class TemplateService(
         var transformed = sb.ToString();
         return Task.FromResult(transformed);
     }
-
-    #endregion
 
 }
