@@ -33,8 +33,8 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <PackageReference Include="CodeGator.Exceptions" Version="1.1.3" />
-	  <PackageReference Include="CodeGator.Validations" Version="1.1.3" />
+	  <PackageReference Include="CodeGator.Exceptions" Version="1.1.4" />
+	  <PackageReference Include="CodeGator.Validations" Version="1.1.4" />
 	  <PackageReference Include="Nerdbank.GitVersioning" Version="3.10.44-alpha">
 	    <PrivateAssets>all</PrivateAssets>
 	    <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
